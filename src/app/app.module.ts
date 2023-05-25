@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { ParentComponent } from './components/parent/parent.component';
 import { ChildComponent } from './components/child/child.component';
 import { ParentService } from './services/parent.service';
-import { FlexLayoutModule } from '@angular/flex-layout';
+// import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [AppComponent, ParentComponent, ChildComponent],
-  imports: [BrowserModule, AppRoutingModule, FlexLayoutModule,
-  FormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    // FlexLayoutModule,
+    FormsModule,
+  ],
   providers: [ParentService],
   bootstrap: [AppComponent],
 })
